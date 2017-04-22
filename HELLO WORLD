@@ -1,0 +1,16 @@
+// ConsoleApplication1.cpp : 定义控制台应用程序的入口点。
+//
+
+#include "iostream"
+
+
+int main()
+{
+	using namespace std;
+	int i;
+	i = 5;
+	cout << "当前的I是" << i << endl;
+	i = 6;
+	cout << "当前的I是" << i << endl;
+    return 0;
+}
