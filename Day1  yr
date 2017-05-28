@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 int main()
 {
@@ -16,6 +17,39 @@ int main()
 	if (a5 > b)		{b=a5;}
 
 	printf("%d", &b);
+    
+    return 0;
+}
+
+
+*/
+
+
+#include <stdio.h>
+int main()
+{
+    int a1, a2, a3, a4, a5, b;
+    printf("You can find the lagerest number here. \n");
+// here has put five number
+     printf("number 1 \n");		scanf("%d", &a1);
+     printf("number 2 \n");		scanf("%d", &a2);    
+     printf("number 3 \n");		scanf("%d", &a3);    
+     printf("number 4 \n");		scanf("%d", &a4);    
+     printf("number 5 \n");		scanf("%d", &a5);
+    
+   if (a1 > a2)		{b=a1;}
+		else 		{b=a2;}
+	
+   if (b > a3)		{b=a2;}
+		else		{b=a3;}
+		
+	if (b > a4)		{b=a3;}
+		else 		{b=a4;}
+		
+	if (b > a5)		{b=a4;}
+		else 		{b=a5;}
+		
+	printf("%d", b);
     
     return 0;
 }
