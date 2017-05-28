@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int a1, a2, a3, a4, a5, b;
+    printf("You can find the lagerest number here. \n");
+// here has put five number
+     printf("number 1 \n");		scanf("%d", &a1);
+     printf("number 2 \n");		scanf("%d", &a2);    
+     printf("number 3 \n");		scanf("%d", &a3);    
+     printf("number 4 \n");		scanf("%d", &a4);    
+     printf("number 5 \n");		scanf("%d", &a5);
+    
+    if (a1 > a2)   	{b=a1;}
+    if (a3 > b)		{b=a3;}		
+	if (a4 > b)		{b=a4;}		
+	if (a5 > b)		{b=a5;}
+
+	printf("%d", &b);
+    
+    return 0;
+}
