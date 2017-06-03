@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(void)
+{
+	int a, b, x;
+	printf("Puts two number here \n\nnum1  :  ");
+	scanf("%d", &a);	
+	printf("num2  :  ");
+	scanf("%d", &b);
+	
+	x=a;
+	a=b;
+	b=x;
+	
+	printf("up and down!\n");
+	printf("%d", a);
+ 	printf("  %d\n", b);
+	//printf jiu bu yao jia "&" le 
+	return 0;
+}
