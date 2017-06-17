@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(void)
+{
+	float F = 0.0f;//声明华氏度变量为F 
+	float C = 0.0f;//C
+	int mode;
+	printf("摄氏度转为华氏度输入0 反之输入1 : ");
+	scanf("%d", &mode);
+	if(mode == 0)
+		{
+		printf("请输入华氏度: ");
+		scanf("%f",&F);
+		C = (F-32)*5/9;
+		printf("%f度等同于摄氏%f度.\n", F, C);
+		}
+	else if(mode == 1)
+		{
+		printf("请输入摄氏度");
+		scanf("%f",&C);
+		F = 1.8*C+32;
+		printf("%f度等于华氏%f度.\n", C, F);
+		}
+		else
+		{
+		printf("输入有误\a\a\n"); 
+		}
+		printf("请按任意键继续\n");
+		getch();
+		return 0;
+}
